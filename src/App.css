@@ -245,3 +245,24 @@ fieldset {
 .focus label {
   margin-left: 10px;
 }
+
+.navbar {
+  background-color: #e0e0de;
+  color: black;
+  position: relative;
+  width: 100%;
+  columns: 3;
+}
+
+.navbar-element {
+  text-align: center;
+}
+
+.navbar-image {
+  position: relative;
+  width: 10%;
+}
+
+.navbar-text {
+  margin-top: -10px;
+}

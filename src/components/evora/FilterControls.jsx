@@ -1,7 +1,7 @@
 //import { setFilter } from "../apiClient";
 
 import { useCallback, useEffect, useState } from 'react';
-import { getFilterWheel, homeFilterWheel, setFilterWheel } from '../apiClient';
+import { getFilterWheel, homeFilterWheel, setFilterWheel } from '../../apiClient';
 import BeatLoader from 'react-spinners/BeatLoader';
 
 /**

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getTemperature } from "../apiClient";
+import { getTemperature } from "../../apiClient";
 
 import { Line } from 'react-chartjs-2';
 import "chart.js/auto";
@@ -85,7 +85,7 @@ function GetTemp({currTemp, setCurrTemp, isDisabled}) {
     ],
   };
 
-  const options = require("./resources/graph_options.json");
+  const options = require("../resources/graph_options.json");
   
 
   const graphButtonHandler = () => {

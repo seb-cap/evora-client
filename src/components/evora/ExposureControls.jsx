@@ -1,5 +1,5 @@
-import { capture, abort } from "../apiClient"
-import { set, useForm } from "react-hook-form"
+import { capture, abort } from "../../apiClient"
+import { useForm } from "react-hook-form"
 import {useEffect, useState} from "react"
 
 
@@ -60,7 +60,7 @@ function ExposureControls({ exposureType, imageType, filterType, setDisplayedIma
         data.exptime = data.exptime.toString()
         data.filtype = filterType
 
-        if (data.imgtype !== "Bias" && data.exptype != "Real Time") {
+        if (data.imgtype !== "Bias" && data.exptype !== "Real Time") {
             setTime(data.exptime);
             setCurrTimer(data.exptime);
             setEndTime(Date.now() + data.exptime * 1000);

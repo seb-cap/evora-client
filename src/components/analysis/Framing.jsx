@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import React from "react";
 
 // const backendUrl = 'http://localhost:3005';
 const backendUrl = '/api'
 
 
-function Framing(isDisabled) {
+function Framing() {
     const [filename, setFilename] = useState('');
     const [solvingResult, setSolvingResult] = useState('');
     const [loading, setLoading] = useState(false); // Loading state

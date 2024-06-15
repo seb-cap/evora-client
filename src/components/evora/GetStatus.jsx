@@ -1,5 +1,5 @@
-import { getStatus } from "../apiClient";
-import { ERROR_CODES } from "./resources/andor_codes";
+import { getStatus } from "../../apiClient";
+import { ERROR_CODES } from "../resources/andor_codes";
 
 /**
  * Displays a button to display the current status of andor.

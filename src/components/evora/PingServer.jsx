@@ -1,4 +1,4 @@
-import { getStatusTEC, getFilterWheel } from "../apiClient"
+import { getStatusTEC, getFilterWheel } from "../../apiClient"
 
 /**
  * Displays options to ping the server and the filter wheel server.

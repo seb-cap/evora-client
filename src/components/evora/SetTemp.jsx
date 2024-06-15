@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form"
-import { setTemperature } from "../apiClient";
+import { setTemperature } from "../../apiClient";
 
 /**
  * Displays a field to input a set temperature to the camera.
@@ -7,13 +7,6 @@ import { setTemperature } from "../apiClient";
 function SetTemp({temp, setTemp, isDisabled}) {
 
     const {register, handleSubmit} = useForm()
-
-    // Remove this? "defined but never used"
-    async function callSetTemperature(value) {
-      console.log(value)
-      setTemp(await setTemperature(value))
-    }
-
 
     const onSubmit = async(data) => {
       const val = parseInt(data.temperature)
